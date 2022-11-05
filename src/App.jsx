@@ -7,6 +7,7 @@ import Contact from './components/contact/contact'
 import './app.scss'
 import { useState } from "react";
 
+
 function App() {
   // For the hamburger
   const [menuOpen, setMenuOpen] = useState(false)
@@ -16,8 +17,8 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro/>
-        <Portfolio/>
         <Works/>
+        <Portfolio/>
         <Contact/>
       </div>
     </div>
