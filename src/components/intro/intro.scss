@@ -1,6 +1,14 @@
+@import '../../global.scss';
+
 .intro {
     background-color: white;
     display: flex;
+
+    // Adding responsiveness
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
 
     .left{
         flex: 0.5;
@@ -15,8 +23,17 @@
             justify-content: center;
             float: right;
             
+            @include mobile {
+                align-items: flex-start;
+            }
+
             img{
                 width: 100%;
+
+                @include mobile {
+                    width: 50%;
+                    height: 50%;
+                }
             }
         }
     }
@@ -33,15 +50,34 @@
             flex-direction: column;
             justify-content: center;
 
+            @include mobile {
+                padding-left: 0;
+                align-items: center;
+                height: 80%;
+            }
+
             h1{
                 font-size: 60px;
                 margin: 10px 0;
+
+                @include mobile {
+                    font-style: 40px;
+                }
             }
             h2{
                 font-size: 35px;
+
+                @include mobile {
+                    font-style: 30px;
+                }
             }
             h3{
                 font-size: 30px;
+
+                @include mobile {
+                    font-style: 20px;
+                }
+
                 span {
                     font-size: inherit;
                     color: gray;

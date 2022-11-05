@@ -4,13 +4,6 @@ import { useEffect, useRef } from 'react';
 
 export default function Intro() {
   const textRef = useRef();
-  // useEffect(()=> {
-  //   init(textRef.current, {
-  //     backDelay: 1500,
-  //     backSpeed: 50,
-  //     strings: ['Software Developer', 'Full Stack Developer', 'Anime Lover', 'AI Enthusiast']
-  //   })
-  // },[]);
   return (
     <div className='intro' id='intro'> 
       <div className='left'>
