@@ -1,10 +1,15 @@
 import './Portfolio.scss'
 import PortfolioList from "../portfolioList/PortfolioList";
 import { useEffect, useState } from 'react';
+import { featuredPortfolio,
+  softwareDevPortfolio,
+  automationPortfolio,
+  aiDataAnalysisPortfolio } from '../../data'
 
 export default function Portfolio() {
   // Create the switch for the selection of each title
-  const [selected, setSelected] = useState('featured')
+  const [selected, setSelected] = useState('featured');
+  const [data, setData] = useState([])
   const list = [
     {
       id: 'featured',
@@ -20,12 +25,32 @@ export default function Portfolio() {
     },
     {
       id: 'ai',
-      title: 'Artificial Intelligence',
+      title: 'AI/Data Analysis',
     },
   ];
+  // Switch case for bringing the data from data.js
+  useEffect(() => {
+    switch(selected){
+      case 'featured':
+        setData(featuredPortfolio);
+        break;
+      case 'software':
+        setData(softwareDevPortfolio);
+        break;
+      case 'automation':
+        setData(automationPortfolio);
+        break;
+      case 'ai':
+        setData(aiDataAnalysisPortfolio);
+        break;
+      default:
+        setData(featuredPortfolio)
+    }
+  }, [selected])
   return (
     <div className='portfolio' id='portfolio'>
       <h1>Portfolio</h1>
+      <h3>Hover over the images</h3>
       <ul>
         {list.map((item)=>(
           <PortfolioList 
@@ -37,26 +62,16 @@ export default function Portfolio() {
         ))}
       </ul>
       <div className="container">
-        <div className="item">
-          <img src="assets/game.jpg" alt="" />
-          <h3>RPG Game in Python</h3>
-        </div>
-        <div className="item">
-          <img src="assets/game.jpg" alt="" />
-          <h3>RPG Game in Python</h3>
-        </div>
-        <div className="item">
-          <img src="assets/game.jpg" alt="" />
-          <h3>RPG Game in Python</h3>
-        </div>
-        <div className="item">
-          <img src="assets/game.jpg" alt="" />
-          <h3>RPG Game in Python</h3>
-        </div>
-        <div className="item">
-          <img src="assets/game.jpg" alt="" />
-          <h3>RPG Game in Python</h3>
-        </div>
+        {data.map((d) => (
+          <div className="item">
+            <a href={d.link} target="_blank" rel="noopener noreferrer">
+              <img src={d.img} alt=""/>
+            </a>
+            <h3>{d.title}</h3>
+            <h4>{d.description}</h4>
+            <p>{d.tech}</p>
+          </div>
+        ))}
       </div>
     </div>
   )
