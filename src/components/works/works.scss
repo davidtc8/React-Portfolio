@@ -1,3 +1,79 @@
+@import '../../global.scss';
+
 .works{
-    background-color: lightgreen;
+    background-color: white;
+}
+
+section > header {
+    font-size: 50px;
+    text-align: center;
+    padding: 24px;
+    font-weight: 600;
+}
+
+section .skills {
+    color: $mainColor;
+    display: grid;
+    grid-gap: 16px;
+    padding: 16px;
+    max-width: 100%;
+    text-align: center;
+    margin-inline: auto;
+}
+
+@media screen and (min-width: 600px) {
+    .skills {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skills {
+        grid-template-columns: 1fr;
+    }
+}
+
+.skills .set {
+    background-color: white;
+    padding: 24px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.skills .set:hover {
+    box-shadow: 0px 12px 16px $mainColor;
+    transition: all .5s ease;
+}
+
+.set .iconFontAwesome {
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    font-size: 48px;
+    background-color: $mainColor;
+    color: white;
+    border-radius: 35%;
+    margin-inline: auto;
+}
+
+.set > header {
+    padding-block: 24px;
+    font-size: 24px;
+    font-weight: 500;
+    color: $mainColor;
+    text-align: center;
+}
+
+.set .list {
+    text-align: center;
+    padding-block: 10px;
+    color: #B2B2B2;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.set:hover .list {
+    color: $mainColor;
+    transition: all 1s ease;
 }
