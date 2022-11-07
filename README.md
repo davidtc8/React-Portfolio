@@ -2,7 +2,13 @@
 Website where you'll be able to see all my recent projects!
 
 # Website Link
-![Link](https://whyiliketocode.herokuapp.com/)
+[Heroku Application](https://whyiliketocode.herokuapp.com/).
+
+# Technologies:
+- React
+- Javascript
+- HTML
+- SCSS
 
 # ![license image](https://img.shields.io/badge/license-GPL-brightgreen.svg)
 # Table of Contents
@@ -23,11 +29,7 @@ None
 # License
 GPL
 
-# Technologies:
-- React
-- Javascript
-- HTML
-- SCSS
+
 
 # Questions
 - Here's my GitHub Profile in case you want to reach out!: https://github.com/davidtc8
