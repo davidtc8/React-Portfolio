@@ -66,6 +66,8 @@
 
                 @include mobile {
                     margin: 0;
+                    z-index: 1;
+                    color: $mainColor;
                 }
             }
 
@@ -115,6 +117,7 @@
                     @include mobile {
                         width: 130px;
                         height: 120px;
+                        opacity: 0.2;
                     }
                 }
 
@@ -132,6 +135,12 @@
 
                     p {
                         z-index: -1;
+                    }
+
+                    @include mobile {
+                        h3 {
+                            color: white;
+                        }
                     }
             }
             }
