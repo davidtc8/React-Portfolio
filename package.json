@@ -47,5 +47,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Website where you'll be able to see all my recent projects!",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidtc8/react-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidtc8/react-portfolio/issues"
+  },
+  "homepage": "https://github.com/davidtc8/react-portfolio#readme"
 }
