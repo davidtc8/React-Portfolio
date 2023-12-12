@@ -1,6 +1,6 @@
 import './intro.scss';
 import TypeWriterEffect from 'react-typewriter-effect';
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 
 export default function Intro() {
   const textRef = useRef();

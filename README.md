@@ -1,36 +1,8 @@
-# My React Portfolio
-Website where you'll be able to see all my recent projects!
+# React + Vite
 
-# Website Link
-[Heroku Application](https://whyiliketocode.herokuapp.com/).
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-# Technologies:
-- React
-- Javascript
-- HTML
-- SCSS
+Currently, two official plugins are available:
 
-# ![license image](https://img.shields.io/badge/license-GPL-brightgreen.svg)
-# Table of Contents
-- [Go to installation section](#-installation)
-- [Go to usage guide section](#-usage-guide)
-- [Go to contribution guidelines section](#-contribution-guidelines)
-- [Go to test instructions section](#-test-instructions)
-- [Go to questions section](#-questions)
-
-# Installation
-There's no need for installation, you can see my website in the deployed Heroku application.
-# Usage Guide
-He can simply navigate the website and contact me if he/she sees it fit for a role.
-# Contribution Guidelines
-David Torres
-# Test Instructions
-None
-# License
-GPL
-
-
-
-# Questions
-- Here's my GitHub Profile in case you want to reach out!: https://github.com/davidtc8
-- Here's my email in case you want to write me: davidtorresc8@gmail.com
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

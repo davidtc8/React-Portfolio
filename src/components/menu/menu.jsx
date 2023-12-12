@@ -1,6 +1,6 @@
 import './menu.scss'
 
-export default function ({menuOpen, setMenuOpen}) {
+export default function Menu({menuOpen, setMenuOpen}) {
   return (
     // If menu open is true, is going add an active class
     <div className={'menu ' + (menuOpen && 'active')}>

@@ -4,8 +4,8 @@ import Intro from "./components/intro/intro";
 import Portfolio from "./components/portfolio/Portfolio";
 import Works from './components/works/works'
 import Contact from './components/contact/contact'
-import './app.scss'
 import { useState } from "react";
+import './app.scss'
 
 
 function App() {
